@@ -1,9 +1,6 @@
 package Application;
 
-import java.util.HashMap;
-
-import Solver.Environnement;
-import Solver.Piece;
+import Solution.Environnement;
 
 public class EnvThread extends Thread {
 
