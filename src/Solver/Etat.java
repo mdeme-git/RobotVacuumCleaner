@@ -66,7 +66,7 @@ public class Etat implements Serializable {
 
 		Piece p = null;
 
-		if (!(a.equals(null) && !a.isNoOp())) {
+		if (a!=null && !a.isNoOp()) {
 
 			res = (Etat) Copy.DeepCopy.copy(e);
 

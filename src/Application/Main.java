@@ -2,9 +2,9 @@ package Application;
 
 import java.util.Scanner;
 
-import Solution.Agent;
-import Solution.Capteur;
-import Solution.Etat;
+import Solver.Agent;
+import Solver.Capteur;
+import Solver.Etat;
 
 public class Main {
 	public static String CHOIX_STRATEGIE = null;

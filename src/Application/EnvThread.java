@@ -1,6 +1,6 @@
 package Application;
 
-import Solution.Environnement;
+import Solver.Environnement;
 
 public class EnvThread extends Thread {
 
