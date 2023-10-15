@@ -53,7 +53,7 @@ public class Agent {
 		System.out.println("UpdateMyState done!");
 		System.out.println("");
 
-		System.out.println("***************************** Etat du Manoir apr�s observation ***************************");
+		System.out.println("***************************** Etat du Manoir apr�s observation ***************************");
 		try {
 			Thread.sleep(900);
 		} catch (InterruptedException e1) {
@@ -74,6 +74,10 @@ public class Agent {
 		if (Main.CHOIX_STRATEGIE.equals("2")) {
 
 			StrategieInformee strategy = new StrategieInformee();
+			/*
+			* Renvoie une liste d'etats permettant de passer de l'etat actuel au but.
+			* Le passe d'un etat E_i à l'état E_(i+1) s effectue à l'issu de l'execution de l'action A(i,i+1).
+			*/
 			Collection<Etat> resultat = strategy.GreedySearch(Belief, Desire);
 			for (Etat e : resultat)
 				Intentions.add(e.getAction());
@@ -107,7 +111,7 @@ public class Agent {
 
 		Double moyenne_optim = 0.0;
 
-		int MA_optim = (int) MA_Performance.keySet().toArray()[0];
+		int MA_optim = (!MA_Performance.isEmpty()) ? (int) MA_Performance.keySet().toArray()[0] : 0;
 
 		for (int i = 0; i < 5; i++) {
 
