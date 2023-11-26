@@ -6,7 +6,6 @@ The following algorithms are implemented:
 
 - Greedy Search
 - Iterative Deepening Search
-- A star
 
 ## Getting Started
 
